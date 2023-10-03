@@ -58,14 +58,14 @@ class AssignmentScreen extends StatelessWidget {
                                   child: Center(
                                     child: Text(
                                       assignment[index].subjectName,
-                                      style: Theme.of(context).textTheme.caption,
+                                      style: Theme.of(context).textTheme.bodySmall,
                                     ),
                                   ),
                                 ),
                                 kHalfSizedBox,
                                 Text(
                                   assignment[index].topicName,
-                                  style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(
                                     color: kTextBlackColor,
                                     fontWeight: FontWeight.w900,
                                   ),

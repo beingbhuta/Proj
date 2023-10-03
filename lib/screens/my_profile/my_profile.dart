@@ -25,7 +25,7 @@ class MyProfileScreen extends StatelessWidget {
                   kHalfWidthSizedBox,
                   Text(
                     'Report',
-                    style: Theme.of(context).textTheme.subtitle2,
+                    style: Theme.of(context).textTheme.titleSmall,
                   ),
                 ],
               ),
@@ -61,10 +61,10 @@ class MyProfileScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Aisha Mirza',
-                        style: Theme.of(context).textTheme.subtitle1,
+                        style: Theme.of(context).textTheme.titleMedium,
                       ),
                       Text('Class X-II A | Roll no: 12',
-                          style: Theme.of(context).textTheme.subtitle2),
+                          style: Theme.of(context).textTheme.titleSmall),
                     ],
                   )
                 ],
@@ -136,7 +136,7 @@ class ProfileDetailRow extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                style: Theme.of(context).textTheme.titleMedium!.copyWith(
                       color: kTextBlackColor,
                       fontSize: SizerUtil.deviceType == DeviceType.tablet
                           ? 7.sp
@@ -144,7 +144,7 @@ class ProfileDetailRow extends StatelessWidget {
                     ),
               ),
               kHalfSizedBox,
-              Text(value, style: Theme.of(context).textTheme.caption),
+              Text(value, style: Theme.of(context).textTheme.bodySmall),
               kHalfSizedBox,
               SizedBox(
                 width: 35.w,
@@ -182,7 +182,7 @@ class ProfileDetailColumn extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                style: Theme.of(context).textTheme.titleMedium!.copyWith(
                       color: kTextBlackColor,
                       fontSize: SizerUtil.deviceType == DeviceType.tablet
                           ? 7.sp
@@ -190,7 +190,7 @@ class ProfileDetailColumn extends StatelessWidget {
                     ),
               ),
               kHalfSizedBox,
-              Text(value, style: Theme.of(context).textTheme.caption),
+              Text(value, style: Theme.of(context).textTheme.bodySmall),
               kHalfSizedBox,
               SizedBox(
                 width: 92.w,

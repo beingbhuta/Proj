@@ -44,9 +44,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('Hi Student',
-                          style: Theme.of(context).textTheme.subtitle1),
+                          style: Theme.of(context).textTheme.titleMedium),
                       Text('Sign in to continue',
-                          style: Theme.of(context).textTheme.subtitle2),
+                          style: Theme.of(context).textTheme.titleSmall),
                       sizedBox,
                     ],
                   ),
@@ -97,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             textAlign: TextAlign.end,
                             style: Theme.of(context)
                                 .textTheme
-                                .subtitle2!
+                                .titleSmall!
                                 .copyWith(
                                     color: kPrimaryColor,
                                     fontWeight: FontWeight.w500),

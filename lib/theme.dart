@@ -61,26 +61,22 @@ class CustomTheme {
     ),
     textTheme: GoogleFonts.poppinsTextTheme().copyWith(
       //custom text for bodyText1
-      headline5: GoogleFonts.chewy(
+      headlineSmall: GoogleFonts.chewy(
         color: kTextWhiteColor,
         //condition if device is tablet or a phone
         fontSize: SizerUtil.deviceType == DeviceType.tablet ? 45.sp : 40.sp,
       ),
-      bodyText1: TextStyle(
+      bodyMedium: TextStyle(
           color: kTextWhiteColor, fontSize: 35.0, fontWeight: FontWeight.bold),
-      bodyText2: TextStyle(
-        color: kTextWhiteColor,
-        fontSize: 28.0,
-      ),
-      subtitle1: TextStyle(
+      titleMedium: TextStyle(
           color: kTextWhiteColor,
           fontSize: SizerUtil.deviceType == DeviceType.tablet ? 14.sp : 17.sp,
           fontWeight: FontWeight.w700),
-      subtitle2: GoogleFonts.poppins(
+      titleSmall: GoogleFonts.poppins(
           color: kTextWhiteColor,
           fontSize: SizerUtil.deviceType == DeviceType.tablet ? 12.sp : 13.sp,
           fontWeight: FontWeight.w200),
-      caption: GoogleFonts.poppins(
+      bodySmall: GoogleFonts.poppins(
           color: kTextLightColor,
           fontSize: SizerUtil.deviceType == DeviceType.tablet ? 5.sp : 7.sp,
           fontWeight: FontWeight.w300),
