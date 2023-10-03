@@ -134,6 +134,7 @@ class _LoginScreenState extends State<LoginScreen> {
         } else if (!regExp.hasMatch(value)) {
           return 'Please enter a valid email address';
         }
+        return null;
       },
     );
   }
@@ -165,6 +166,7 @@ class _LoginScreenState extends State<LoginScreen> {
         if (value!.length < 5) {
           return 'Must be more than 5 characters';
         }
+        return null;
       },
     );
   }
